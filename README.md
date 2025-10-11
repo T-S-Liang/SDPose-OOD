@@ -12,9 +12,9 @@
 
 [Shuang Liang](https://t-s-liang.github.io)<sup>1,4*</sup>,
 [Jing He](https://scholar.google.com/citations?hl=en&user=RsLS11MAAAAJ)<sup>3</sup>,
-[Chuanmeizhi Wang]<sup>1</sup>,
-[Lejun Liao]<sup>2</sup>,
-[Guo Zhang]<sup>1</sup>,
+Chuanmeizhi Wang<sup>1</sup>,
+Lejun Liao<sup>2</sup>,
+Guo Zhang<sup>1</sup>,
 [Ying-Cong Chen](https://www.yingcong.me/)<sup>3,5</sup>
 [Yuan Yuan](https://yyuanad.github.io/)<sup>2†</sup>
 
