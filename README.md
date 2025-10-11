@@ -64,22 +64,6 @@
 <img src="assets/examples/Anime.png" width="100%">
 </div>
 
-### 🎬 Demo: Animation Video Pose Estimation in the Wild
-
-<div align="center">
-
-📹 **Video demos available in** [`assets/video_demos/`](./assets/video_demos/)
-
-| Demo | Description |
-|------|-------------|
-| 🎥 [hongxia.mp4](./assets/video_demos/hongxia.mp4) | Animation character pose tracking |
-| 🎥 [laoba.mp4](./assets/video_demos/laoba.mp4) | Dynamic motion estimation |
-| 🎥 [nina.mp4](./assets/video_demos/nina.mp4) | Stylized character poses |
-| 🎥 [xiduo.mp4](./assets/video_demos/xiduo.mp4) | Complex animation sequences |
-
-</div>
-
-> 💡 **Tip**: For more interactive demos and real-time inference, check out our [🤗 HuggingFace Spaces](https://huggingface.co/spaces/teemosliang/SDPose-Body)!
 
 ---
 
