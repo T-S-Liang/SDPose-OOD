@@ -28,6 +28,7 @@ Guo Zhang<sup>1</sup>,
 
 ## 📢 News
 
+- **[2025-Oct-13]** 🚀 **Gradio local deployment script** released! You can now run SDPose demos locally on your machine.
 - **[2025-Oct-12]** 🎉 **Body model** and **inference code** released! Check out our [HuggingFace Model (Body)](https://huggingface.co/teemosliang/SDPose-Body).
 - **[2025-Sep-29]** 📄 Paper released on [arXiv](https://arxiv.org/abs/2509.24980).
 
@@ -35,8 +36,8 @@ Guo Zhang<sup>1</sup>,
 
 - [ ] **Training code** release
 - [ ] **WholeBody model** release  
-- [ ] **Gradio script** release
-- [ ] **Enhanced HuggingFace demos**
+- [x] **Gradio local deployment usage tutorial**
+- [x] **Enhanced HuggingFace demos**
 
 ---
 
@@ -129,21 +130,35 @@ Download the pre-trained **Body model** checkpoint:
 
 [HuggingFace Model (Body)](https://huggingface.co/teemosliang/SDPose-Body)
 
-## 🤗 Gradio Demo (Comming Soon)
+## 🤗 Gradio Demo
 
-We will provide interactive **Gradio demos** on HuggingFace Spaces:
+We provide interactive **Gradio demos** on HuggingFace Spaces:
 
 - 🔗 **[Body Pose Demo](https://huggingface.co/spaces/teemosliang/SDPose-Body)**: Estimate 17 COCO body keypoints
 - 🔗 **[Wholebody Pose Demo](https://huggingface.co/spaces/teemosliang/SDPose-Wholebody)**: Estimate 133 COCO-WholeBody keypoints (face, hands, body, feet)
 
 ### Run Gradio Demo Locally
 
-> **Coming Soon**: We will release the Gradio script for local deployment. Stay tuned!
+You can now run the Gradio demo on your local machine! 
+
+#### Prerequisites
+
+Since SDPose is a **top-down pose estimation** method, it requires an object detection model to detect humans in the image first. We recommend using **YOLO11-x** for robust human detection:
+
+**Download YOLO11-x model:**
+```bash
+# Download the YOLO11-x pretrained model
+wget https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x.pt -P models/
+```
+
+#### Launch Gradio App
 
 ```bash
-# Gradio script will be available soon
-# python demo/gradio_app.py --checkpoint checkpoints/sdpose_body.pth
+cd gradio_app
+bash launch_gradio.sh
 ```
+
+The Gradio interface will be available at `http://localhost:7860` (or the port specified in the launch script).
 
 ---
 
@@ -198,6 +213,28 @@ SDPose supports a wide range of cross-domain pose estimation benchmarks:
 - COCO-WholeBody (133 keypoints)
 - COCO-WholeBody-OOD (133 keypoints)
 
+---
+
+## 📊 COCO-OOD Dataset
+
+<div align="center">
+<img src="assets/examples/COCOOOD_Dataset.png" width="80%">
+</div>
+
+To complement the HumanArt dataset and enable OOD evaluation under matched content and labels, we constructed **COCO-OOD** by applying artistic style transfer to the original COCO images. 
+
+### Dataset Construction
+
+We adopt the official [CycleGAN](https://github.com/junyanz/CycleGAN) framework to perform unpaired image-to-image translation from the COCO domain (natural photographs) to the target domain of Monet-style paintings. We use the `monet2photo` model provided in the CycleGAN repository. During conversion, all validation images in COCO are processed to produce style-transferred counterparts, while preserving their original human annotations (bounding boxes, keypoints). This yields an OOD variant of COCO in which the underlying scene structure is unchanged, but the texture, color palette, and brushstroke patterns are consistent with Monet's artistic style.
+
+Importantly, for fair comparison and to avoid introducing priors from large-scale pretrained diffusion models, we intentionally adopt the earlier CycleGAN framework rather than more recent style transfer methods. Such stylization introduces a significant appearance shift while keeping pose-related geometric information intact, making it suitable for robust pose estimation evaluation.
+
+### Download
+
+📥 **[Download COCO-OOD Dataset](https://drive.google.com/file/d/1T38S8gP406FGAoDmYv7eeThMWRLi3DkR/view)** from Google Drive
+
+---
+
 ## 🎓 Citation
 
 If you find SDPose useful in your research, please consider citing:
@@ -231,6 +268,7 @@ This project is built upon the following excellent open-source projects:
 - [Marigold](https://github.com/prs-eth/marigold): Diffusion-based depth estimation
 - [Lotus](https://github.com/EnVision-Research/Lotus): Diffusion-based dense prediction
 - [Stable Diffusion](https://github.com/Stability-AI/stablediffusion): Latent diffusion models
+- [CycleGAN](https://github.com/junyanz/CycleGAN): Unpaired Image-to-Image Translation
 
 ---
 
@@ -244,7 +282,6 @@ For questions, suggestions, or collaboration inquiries:
 ---
 
 <div align="center">
-
 **⭐ Star us on GitHub — it motivates us a lot!**
 
 [🌐 Website](https://t-s-liang.github.io/SDPose) | [📄 Paper](https://arxiv.org/abs/2509.24980)
