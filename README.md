@@ -6,8 +6,9 @@
 
 [![Page](https://img.shields.io/badge/Project-Website-pink?logo=googlechrome&logoColor=white)](https://t-s-liang.github.io/SDPose)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.24980)
-[![HuggingFace Demo](https://img.shields.io/badge/🤗%20HuggingFace-Demo%20(Body)-yellow)](https://huggingface.co/spaces/teemosliang/SDPose-Body)
-[![HuggingFace Demo](https://img.shields.io/badge/🤗%20HuggingFace-Demo%20(Wholebody)-yellow)](https://huggingface.co/spaces/teemosliang/SDPose-Wholebody)
+[![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Body-blue)](https://huggingface.co/teemosliang/SDPose-Body)
+[![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Body%20Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose-Body)
+[![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Wholebody%20Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose-Wholebody)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 [Shuang Liang](https://t-s-liang.github.io)<sup>1,4*</sup>,
@@ -29,14 +30,14 @@ Guo Zhang<sup>1</sup>,
 ## 📢 News
 
 - **[2025-Oct-13]** 🚀 **Gradio local deployment script** released! You can now run SDPose demos locally on your machine.
-- **[2025-Oct-12]** 🎉 **Body model** and **inference code** released! Check out our [HuggingFace Model (Body)](https://huggingface.co/teemosliang/SDPose-Body).
+- **[2025-Oct-12]** 🎉 **Body model** and **inference code** released! Check out our [🤗 Model Repository](https://huggingface.co/teemosliang/SDPose-Body) and [🤗 Online Demo](https://huggingface.co/spaces/teemosliang/SDPose-Body).
 - **[2025-Sep-29]** 📄 Paper released on [arXiv](https://arxiv.org/abs/2509.24980).
 
 ### 🚀 Coming Soon
 
 - [ ] **Training code** release
 - [ ] **WholeBody model** release  
-- [x] **Gradio local deployment usage tutorial**
+- [x] **Gradio local deployment script** release
 - [x] **Enhanced HuggingFace demos**
 
 ---
@@ -126,9 +127,11 @@ pip install -r requirements.txt
 
 ### Download Pre-trained Models
 
-Download the pre-trained **Body model** checkpoint:
+Download the pre-trained **Body model** checkpoint from our HuggingFace Model repository:
 
-[HuggingFace Model (Body)](https://huggingface.co/teemosliang/SDPose-Body)
+**🤗 [SDPose-Body Model](https://huggingface.co/teemosliang/SDPose-Body)**
+
+The model repository contains the checkpoint files and detailed usage instructions.
 
 ## 🤗 Gradio Demo
 
@@ -284,6 +287,6 @@ For questions, suggestions, or collaboration inquiries:
 <div align="center">
 **⭐ Star us on GitHub — it motivates us a lot!**
 
-[🌐 Website](https://t-s-liang.github.io/SDPose) | [📄 Paper](https://arxiv.org/abs/2509.24980)
+[🌐 Website](https://t-s-liang.github.io/SDPose) | [📄 Paper](https://arxiv.org/abs/2509.24980) | [🤗 Model](https://huggingface.co/teemosliang/SDPose-Body) | [🤗 Demo](https://huggingface.co/spaces/teemosliang/SDPose-Body)
 
 </div>
