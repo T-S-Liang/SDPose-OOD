@@ -285,6 +285,12 @@ class SDPose_D_Pipeline(DiffusionPipeline):
 
             return self.add_pred_to_datasample(batch_pred_instances=batch_pred_instances, batch_data_samples=data_samples, batch_pred_fields=batch_pred_fields)
 
+        elif mode == "inference":
+            
+            preds = self.decoder.predict(feats, data_samples, test_cfg=self.test_cfg)
+
+            return preds
+            
         else:
             if self.test_cfg.get('flip_test', False):
                 
