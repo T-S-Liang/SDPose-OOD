@@ -64,6 +64,30 @@ Guo Zhang<sup>1</sup>,
 <img src="assets/examples/Anime.png" width="100%">
 </div>
 
+### 🎬 Demo: Animation Video Pose Estimation in the Wild
+
+**SDPose** demonstrates robust performance on animation videos.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/video_demos/hongxia.gif" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/video_demos/laoba.gif" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/video_demos/nina.gif" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/video_demos/xiduo.gif" width="100%">
+    </td>
+  </tr>
+</table>
+
+> 💡 **Tip**: For more interactive demos and real-time inference, check out our [🤗 HuggingFace Spaces](https://huggingface.co/spaces/teemosliang/SDPose-Body)!
 
 ---
 
