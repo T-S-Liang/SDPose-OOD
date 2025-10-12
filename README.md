@@ -50,6 +50,31 @@ Guo Zhang<sup>1</sup>,
 
 ---
 
+## 🎬 Demo: Animation Video Pose Estimation in the Wild
+
+**SDPose** demonstrates robust performance on animation videos.
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="assets/video_demos/hongxia.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+    </td>
+    <td align="center" width="25%">
+      <img src="assets/video_demos/laoba.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+    </td>
+    <td align="center" width="25%">
+      <img src="assets/video_demos/nina.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+    </td>
+    <td align="center" width="25%">
+      <img src="assets/video_demos/xiduo.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+    </td>
+  </tr>
+</table>
+
+> 💡 **Tip**: For more interactive demos and real-time inference, check out our [🤗 HuggingFace Spaces](https://huggingface.co/spaces/teemosliang/SDPose-Body)!
+
+---
+
 ## 🎨 Visualization
 
 ### Body Pose Estimation (17 Keypoints)
@@ -63,31 +88,6 @@ Guo Zhang<sup>1</sup>,
 <div align="center">
 <img src="assets/examples/Anime.png" width="100%">
 </div>
-
-### 🎬 Demo: Animation Video Pose Estimation in the Wild
-
-**SDPose** demonstrates robust performance on animation videos.
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="assets/video_demos/hongxia.gif" width="100%">
-    </td>
-    <td align="center" width="50%">
-      <img src="assets/video_demos/laoba.gif" width="100%">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="assets/video_demos/nina.gif" width="100%">
-    </td>
-    <td align="center" width="50%">
-      <img src="assets/video_demos/xiduo.gif" width="100%">
-    </td>
-  </tr>
-</table>
-
-> 💡 **Tip**: For more interactive demos and real-time inference, check out our [🤗 HuggingFace Spaces](https://huggingface.co/spaces/teemosliang/SDPose-Body)!
 
 ---
 
