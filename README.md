@@ -57,16 +57,24 @@ Guo Zhang<sup>1</sup>,
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="assets/video_demos/hongxia.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
+        <img src="assets/video_demos/hongxia.gif" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
     </td>
     <td align="center" width="25%">
-      <img src="assets/video_demos/laoba.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
+        <img src="assets/video_demos/laoba.gif" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
     </td>
     <td align="center" width="25%">
-      <img src="assets/video_demos/nina.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
+        <img src="assets/video_demos/nina.gif" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
     </td>
     <td align="center" width="25%">
-      <img src="assets/video_demos/xiduo.gif" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
+        <img src="assets/video_demos/xiduo.gif" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
     </td>
   </tr>
 </table>
