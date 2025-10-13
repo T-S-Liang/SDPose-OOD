@@ -35,7 +35,6 @@ Guo Zhang<sup>1</sup>,
 
 ### 🚀 Coming Soon
 
-- [ ] **Training code** release
 - [x] **HuggingFace space demo** release
 - [x] **WholeBody model** release  
 - [x] **Gradio local deployment script** release
