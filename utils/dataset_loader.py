@@ -123,7 +123,7 @@ def prepare_dataset(batch_size, dataset_name, dataset_root, mode = "val", num_wo
             bbox_file='COCO/person_detection_results/COCO_val2017_detections_AP_H_70_person.json',
         )
 
-    elif dataset_name == "COCO-OOD Wholebody":
+    elif dataset_name == "COCO-OOD_Wholebody":
 
         print("Running Validation on COCO-OOD Wholebody.")
 
