@@ -57,28 +57,29 @@ Guo Zhang<sup>1</sup>,
 **SDPose** demonstrates robust performance on animation videos.
 <table>
   <tr>
-    <td>
-      <div style="height:220px; aspect-ratio:4/3; max-width:100%; border-radius:10px; overflow:hidden;">
-        <img src="assets/video_demos/hongxia.gif" style="width:100%; height:100%; object-fit:contain; display:block;">
+    <td align="center">
+      <div style="height:220px; aspect-ratio:4/3; border-radius:10px; overflow:hidden;">
+        <img src="assets/video_demos/hongxia.gif" style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
     </td>
-    <td>
-      <div style="height:220px; aspect-ratio:4/3; max-width:100%; border-radius:10px; overflow:hidden;">
-        <img src="assets/video_demos/laoba.gif" style="width:100%; height:100%; object-fit:contain; display:block;">
+    <td align="center">
+      <div style="height:220px; aspect-ratio:4/3; border-radius:10px; overflow:hidden;">
+        <img src="assets/video_demos/laoba.gif" style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
     </td>
-    <td>
-      <div style="height:220px; aspect-ratio:4/3; max-width:100%; border-radius:10px; overflow:hidden;">
-        <img src="assets/video_demos/nina.gif" style="width:100%; height:100%; object-fit:contain; display:block;">
+    <td align="center">
+      <div style="height:220px; aspect-ratio:4/3; border-radius:10px; overflow:hidden;">
+        <img src="assets/video_demos/nina.gif" style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
     </td>
-    <td>
-      <div style="height:220px; aspect-ratio:4/3; max-width:100%; border-radius:10px; overflow:hidden;">
-        <img src="assets/video_demos/xiduo.gif" style="width:100%; height:100%; object-fit:contain; display:block;">
+    <td align="center">
+      <div style="height:220px; aspect-ratio:4/3; border-radius:10px; overflow:hidden;">
+        <img src="assets/video_demos/xiduo.gif" style="width:100%; height:100%; object-fit:cover; display:block;">
       </div>
     </td>
   </tr>
 </table>
+
 
 
 > 💡 **Tip**: For more interactive demos and real-time inference, check out our [🤗 HuggingFace Spaces](https://huggingface.co/spaces/teemosliang/SDPose-Body)!
