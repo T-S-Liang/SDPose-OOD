@@ -308,7 +308,8 @@ For questions, suggestions, or collaboration inquiries:
 ---
 
 <div align="center">
-**⭐ Star us on GitHub — it motivates us a lot!**
+
+**⭐ Star us on GitHub - it motivates us a lot!**
 
 [🌐 Website](https://t-s-liang.github.io/SDPose) | [📄 Paper](https://arxiv.org/abs/2509.24980) | [🤗 Model](https://huggingface.co/teemosliang/SDPose-Body) | [🤗 Demo](https://huggingface.co/spaces/teemosliang/SDPose-Body)
 
