@@ -188,6 +188,42 @@ checkpoint_path='/path/to/checkpoint' # Path to SDPose checkpoint
 eval_batch_size=16               # Batch size per GPU
 dataloader_num_workers=16        # Number of data loading workers
 ```
+#### Dataset Preparation and Evaluation
+
+For COCO evaluation, please download the precomputed person detection bounding boxes from:
+https://huggingface.co/noahcao/sapiens-pose-coco/tree/main/sapiens_host/pose/person_detection_results
+
+These detection results are required for evaluation under the top-down protocol on COCO, COCO-OOD, and COCO-WholeBody.
+
+The expected directory structure is:
+```bash
+${DATASET_ROOT}/
+│
+├── COCO/
+│   ├── annotations/
+│   │   ├── person_keypoints_train2017.json
+│   │   ├── person_keypoints_val2017.json
+│   │   ├── coco_wholebody_train_v1.0.json
+│   │   └── coco_wholebody_val_v1.0.json
+│   │
+│   ├── train2017/
+│   ├── val2017/
+│   ├── val2017oil/
+│   └── person_detection_results/
+│       └── COCO_val2017_detections_AP_H_70_person.json
+│
+└── HumanArt/
+    ├── annotations/
+    │   └── validation_humanart.json
+    └── images/
+
+When running evaluation, the dataloader will automatically locate the correct annotation and bounding box files based on the specified dataset name:
+- COCO → standard COCO validation
+- COCO_OOD → COCO stylized (val2017oil)
+- COCOWholebody → COCO-WholeBody validation
+- COCO-OOD_Wholebody → COCO-WholeBody OOD validation
+- HumanArt → HumanArt validation set
+```
 
 #### Run Evaluation
 
@@ -201,19 +237,6 @@ This will:
 2. Run inference on the specified dataset
 3. Compute evaluation metrics (AP, AR, etc.)
 4. Print results to console
-
-### Supported Datasets
-
-SDPose supports a wide range of cross-domain pose estimation benchmarks:
-
-**Body Pose:**
-- COCO (17 keypoints)
-- COCO-OOD (17 keypoints)
-- HumanArt (17 keypoints)
-
-**Wholebody Pose:**
-- COCO-WholeBody (133 keypoints)
-- COCO-WholeBody-OOD (133 keypoints)
 
 ---
 
