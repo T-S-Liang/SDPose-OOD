@@ -56,22 +56,13 @@ Guo Zhang<sup>1</sup>,
 
 **SDPose** demonstrates robust performance on animation videos.
 
-<table>
-  <tr>
-    <td align="center" width="25%">
-      <img src="assets/video_demos/hongxia.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
-    </td>
-    <td align="center" width="25%">
-      <img src="assets/video_demos/laoba.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
-    </td>
-    <td align="center" width="25%">
-      <img src="assets/video_demos/nina.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
-    </td>
-    <td align="center" width="25%">
-      <img src="assets/video_demos/xiduo.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
-    </td>
-  </tr>
-</table>
+<div style="display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap;">
+  <img src="assets/video_demos/hongxia.gif" style="height:220px; width:auto; display:block; border-radius:10px;">
+  <img src="assets/video_demos/laoba.gif"   style="height:220px; width:auto; display:block; border-radius:10px;">
+  <img src="assets/video_demos/nina.gif"    style="height:220px; width:auto; display:block; border-radius:10px;">
+  <img src="assets/video_demos/xiduo.gif"   style="height:220px; width:auto; display:block; border-radius:10px;">
+</div>
+
 
 
 > 💡 **Tip**: For more interactive demos and real-time inference, check out our [🤗 HuggingFace Spaces](https://huggingface.co/spaces/teemosliang/SDPose-Body)!
