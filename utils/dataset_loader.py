@@ -74,7 +74,7 @@ def prepare_dataset(batch_size, dataset_name, dataset_root, mode = "val", num_wo
             data_root=dataset_root,
             data_mode='topdown',
             ann_file='COCO/annotations/person_keypoints_val2017.json',
-            data_prefix=dict(img='COCO/val2017/'),
+            data_prefix=dict(img='COCO/val2017oil/'),
             test_mode=True,
             pipeline=val_pipeline,
             bbox_file='COCO/person_detection_results/COCO_val2017_detections_AP_H_70_person.json',
@@ -103,6 +103,36 @@ def prepare_dataset(batch_size, dataset_name, dataset_root, mode = "val", num_wo
             data_mode='topdown',
             ann_file='COCO/annotations/person_keypoints_val2017.json',
             data_prefix=dict(img='COCO/val2017/'),
+            test_mode=True,
+            pipeline=val_pipeline,
+            bbox_file='COCO/person_detection_results/COCO_val2017_detections_AP_H_70_person.json',
+        )
+    
+    elif dataset_name == "COCOWholebody":
+
+        print("Running Validation on COCO Wholebody.")
+
+        val_cfg = dict(
+            type='CocoWholeBodyDataset',
+            data_root=dataset_root,
+            data_mode='topdown',
+            ann_file='COCO/annotations/coco_wholebody_val_v1.0.json',
+            data_prefix=dict(img='COCO/val2017/'),
+            test_mode=True,
+            pipeline=val_pipeline,
+            bbox_file='COCO/person_detection_results/COCO_val2017_detections_AP_H_70_person.json',
+        )
+
+    elif dataset_name == "COCO-OOD Wholebody":
+
+        print("Running Validation on COCO-OOD Wholebody.")
+
+        val_cfg = dict(
+            type='CocoWholeBodyDataset',
+            data_root=dataset_root,
+            data_mode='topdown',
+            ann_file='COCO/annotations/coco_wholebody_val_v1.0.json',
+            data_prefix=dict(img='COCO/val2017oil/'),
             test_mode=True,
             pipeline=val_pipeline,
             bbox_file='COCO/person_detection_results/COCO_val2017_detections_AP_H_70_person.json',
