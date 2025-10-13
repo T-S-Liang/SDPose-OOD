@@ -7,8 +7,8 @@
 [![Page](https://img.shields.io/badge/Project-Website-pink?logo=googlechrome&logoColor=white)](https://t-s-liang.github.io/SDPose)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.24980)
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Body-blue)](https://huggingface.co/teemosliang/SDPose-Body)
-[![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Body%20Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose-Body)
-[![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Wholebody%20Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose-Wholebody)
+[![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Wholebody-blue)](https://huggingface.co/teemosliang/SDPose-Wholebody)
+[![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 [Shuang Liang](https://t-s-liang.github.io)<sup>1,4*</sup>,
@@ -28,18 +28,18 @@ Guo Zhang<sup>1</sup>,
 ---
 
 ## 📢 News
-
+- **[2025-Oct-14]** 🚀 **Wholebody model** and **Huggingface Space Demo** released! You can now run SDPose demos in our Huggingface space! Check out our [🤗 SDPose Huggingface Space](https://huggingface.co/spaces/teemosliang/SDPose) and [🤗 SDPose-Wholebody Model Repository](https://huggingface.co/teemosliang/SDPose-Wholebody).
 - **[2025-Oct-13]** 🚀 **Gradio local deployment script** released! You can now run SDPose demos locally on your machine.
-- **[2025-Oct-12]** 🎉 **Body model** and **inference code** released! Check out our [🤗 Model Repository](https://huggingface.co/teemosliang/SDPose-Body) and [🤗 Online Demo](https://huggingface.co/spaces/teemosliang/SDPose-Body).
+- **[2025-Oct-12]** 🎉 **Body model**, **COCO-OOD validation Benchmark** and **inference code** released! Check out our [🤗 SDPose-Body Model Repository](https://huggingface.co/teemosliang/SDPose-Body).
 - **[2025-Sep-29]** 📄 Paper released on [arXiv](https://arxiv.org/abs/2509.24980).
 
 ### 🚀 Coming Soon
 
-- [ ] **Training code** release
-- [ ] **WholeBody model** release  
+- [x] **HuggingFace space demo** release
+- [x] **WholeBody model** release  
 - [x] **Gradio local deployment script** release
-- [x] **Enhanced HuggingFace demos**
-
+- [x] **Body model** and **Inference code** release
+- [x] **COCO-OOD Validation Benchmark** release
 ---
 
 ## 🔥 Highlights
@@ -130,15 +130,14 @@ pip install -r requirements.txt
 Download the pre-trained **Body model** checkpoint from our HuggingFace Model repository:
 
 **🤗 [SDPose-Body Model](https://huggingface.co/teemosliang/SDPose-Body)**
-
+**🤗 [SDPose-Wholebody Model](https://huggingface.co/teemosliang/SDPose-Wholebody)**
 The model repository contains the checkpoint files and detailed usage instructions.
 
 ## 🤗 Gradio Demo
 
 We provide interactive **Gradio demos** on HuggingFace Spaces:
 
-- 🔗 **[Body Pose Demo](https://huggingface.co/spaces/teemosliang/SDPose-Body)**: Estimate 17 COCO body keypoints
-- 🔗 **[Wholebody Pose Demo](https://huggingface.co/spaces/teemosliang/SDPose-Wholebody)**: Estimate 133 COCO-WholeBody keypoints (face, hands, body, feet)
+- 🤗 **[SDPose Huggingface Space Demo](https://huggingface.co/spaces/teemosliang/SDPose)**
 
 ### Run Gradio Demo Locally
 
@@ -189,6 +188,42 @@ checkpoint_path='/path/to/checkpoint' # Path to SDPose checkpoint
 eval_batch_size=16               # Batch size per GPU
 dataloader_num_workers=16        # Number of data loading workers
 ```
+#### Dataset Preparation and Evaluation
+
+For COCO evaluation, please download the precomputed person detection bounding boxes from:
+https://huggingface.co/noahcao/sapiens-pose-coco/tree/main/sapiens_host/pose/person_detection_results
+
+These detection results are required for evaluation under the top-down protocol on COCO, COCO-OOD, and COCO-WholeBody.
+
+The expected directory structure is:
+```bash
+${DATASET_ROOT}/
+│
+├── COCO/
+│   ├── annotations/
+│   │   ├── person_keypoints_train2017.json
+│   │   ├── person_keypoints_val2017.json
+│   │   ├── coco_wholebody_train_v1.0.json
+│   │   └── coco_wholebody_val_v1.0.json
+│   │
+│   ├── train2017/
+│   ├── val2017/
+│   ├── val2017oil/
+│   └── person_detection_results/
+│       └── COCO_val2017_detections_AP_H_70_person.json
+│
+└── HumanArt/
+    ├── annotations/
+    │   └── validation_humanart.json
+    └── images/
+
+When running evaluation, the dataloader will automatically locate the correct annotation and bounding box files based on the specified dataset name:
+- COCO → standard COCO validation
+- COCO_OOD → COCO stylized (val2017oil)
+- COCOWholebody → COCO-WholeBody validation
+- COCO-OOD_Wholebody → COCO-WholeBody OOD validation
+- HumanArt → HumanArt validation set
+```
 
 #### Run Evaluation
 
@@ -202,19 +237,6 @@ This will:
 2. Run inference on the specified dataset
 3. Compute evaluation metrics (AP, AR, etc.)
 4. Print results to console
-
-### Supported Datasets
-
-SDPose supports a wide range of cross-domain pose estimation benchmarks:
-
-**Body Pose:**
-- COCO (17 keypoints)
-- COCO-OOD (17 keypoints)
-- HumanArt (17 keypoints)
-
-**Wholebody Pose:**
-- COCO-WholeBody (133 keypoints)
-- COCO-WholeBody-OOD (133 keypoints)
 
 ---
 
