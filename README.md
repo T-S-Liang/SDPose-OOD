@@ -59,27 +59,20 @@ Guo Zhang<sup>1</sup>,
 <table>
   <tr>
     <td align="center" width="25%">
-      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
-        <img src="assets/video_demos/hongxia.gif" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
+      <img src="assets/video_demos/hongxia.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
     </td>
     <td align="center" width="25%">
-      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
-        <img src="assets/video_demos/laoba.gif" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
+      <img src="assets/video_demos/laoba.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
     </td>
     <td align="center" width="25%">
-      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
-        <img src="assets/video_demos/nina.gif" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
+      <img src="assets/video_demos/nina.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
     </td>
     <td align="center" width="25%">
-      <div style="position: relative; overflow: hidden; width: 100%; height: 300px; border-radius: 10px;">
-        <img src="assets/video_demos/xiduo.gif" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
+      <img src="assets/video_demos/xiduo.gif" style="width:100%; height:auto; display:block; border-radius:10px;">
     </td>
   </tr>
 </table>
+
 
 > 💡 **Tip**: For more interactive demos and real-time inference, check out our [🤗 HuggingFace Spaces](https://huggingface.co/spaces/teemosliang/SDPose-Body)!
 
