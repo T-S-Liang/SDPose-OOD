@@ -9,6 +9,7 @@
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Body-blue)](https://huggingface.co/teemosliang/SDPose-Body)
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Wholebody-blue)](https://huggingface.co/teemosliang/SDPose-Wholebody)
 [![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose)
+[![ComfyUI Node](https://img.shields.io/badge/ComfyUI-SDPose--OOD-blue)](https://github.com/judian17/ComfyUI-SDPose-OOD)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 [Shuang Liang](https://t-s-liang.github.io)<sup>1,4*</sup>,
@@ -28,6 +29,7 @@ Guo Zhang<sup>1</sup>,
 ---
 
 ## 📢 News
+- **[2025-Oct-28]** 🧩 **ComfyUI node of SDPose-OOD** is now available! We sincerely thank [@judian17](https://github.com/judian17) and [@Piscesbody](https://github.com/Piscesbody) for their excellent contribution in developing this ComfyUI node, which enables downstream ComfyUI workflows and helps more people explore and apply our work. 🔗 Check it out here: [**ComfyUI-SDPose-OOD**](https://github.com/judian17/ComfyUI-SDPose-OOD)
 - **[2025-Oct-14]** 🚀 **Wholebody model** and **Huggingface Space Demo** released! You can now run SDPose demos in our Huggingface space! Check out our [🤗 SDPose Huggingface Space](https://huggingface.co/spaces/teemosliang/SDPose) and [🤗 SDPose-Wholebody Model Repository](https://huggingface.co/teemosliang/SDPose-Wholebody).
 - **[2025-Oct-13]** 🚀 **Gradio local deployment script** released! You can now run SDPose demos locally on your machine.
 - **[2025-Oct-12]** 🎉 **Body model**, **COCO-OOD validation Benchmark** and **inference code** released! Check out our [🤗 SDPose-Body Model Repository](https://huggingface.co/teemosliang/SDPose-Body).
