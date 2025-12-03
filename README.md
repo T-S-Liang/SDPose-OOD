@@ -253,7 +253,7 @@ To complement the HumanArt dataset and enable OOD evaluation under matched conte
 
 ### Dataset Construction
 
-We adopt the official [CycleGAN](https://github.com/junyanz/CycleGAN) framework to perform unpaired image-to-image translation from the COCO domain (natural photographs) to the target domain of Monet-style paintings. We use the `monet2photo` model provided in the CycleGAN repository. During conversion, all validation images in COCO are processed to produce style-transferred counterparts, while preserving their original human annotations (bounding boxes, keypoints). This yields an OOD variant of COCO in which the underlying scene structure is unchanged, but the texture, color palette, and brushstroke patterns are consistent with Monet's artistic style.
+We adopt the official [CycleGAN](https://github.com/junyanz/CycleGAN) and [StyTR2](https://github.com/diyiiyiii/StyTR-2) framework to perform image-to-image translation from the COCO domain (natural photographs) to the target domain of Ukiyo-e and Monet-style paintings. During conversion, all validation images in COCO are processed to produce style-transferred counterparts, while preserving their original human annotations (bounding boxes, keypoints). This yields an OOD variant of COCO in which the underlying scene structure is unchanged, but the texture, color palette, and brushstroke patterns are consistent with Monet's artistic style.
 
 Importantly, for fair comparison and to avoid introducing priors from large-scale pretrained diffusion models, we intentionally adopt the earlier CycleGAN framework rather than more recent style transfer methods. Such stylization introduces a significant appearance shift while keeping pose-related geometric information intact, making it suitable for robust pose estimation evaluation.
 
@@ -296,8 +296,8 @@ This project is built upon the following excellent open-source projects:
 - [Marigold](https://github.com/prs-eth/marigold): Diffusion-based depth estimation
 - [Lotus](https://github.com/EnVision-Research/Lotus): Diffusion-based dense prediction
 - [Stable Diffusion](https://github.com/Stability-AI/stablediffusion): Latent diffusion models
-- [CycleGAN](https://github.com/junyanz/CycleGAN): Unpaired Image-to-Image Translation
-
+- [CycleGAN](https://github.com/junyanz/CycleGAN): Style Transfer for the COCO-OOD Ukiyo-e variant.
+- [StyTR2](https://github.com/diyiiyiii/StyTR-2): Style Transfer for the COCO-OOD Monet-oil variant.
 ---
 
 ## 📧 Contact
