@@ -253,9 +253,9 @@ To complement the HumanArt dataset and enable OOD evaluation under matched conte
 
 ### Dataset Construction
 
-We adopt the official [CycleGAN](https://github.com/junyanz/CycleGAN) and [StyTR2](https://github.com/diyiiyiii/StyTR-2) framework to perform image-to-image translation from the COCO domain (natural photographs) to the target domain of Ukiyo-e and Monet-style paintings. During conversion, all validation images in COCO are processed to produce style-transferred counterparts, while preserving their original human annotations (bounding boxes, keypoints). This yields an OOD variant of COCO in which the underlying scene structure is unchanged, but the texture, color palette, and brushstroke patterns are consistent with Monet's artistic style.
+We adopt the official [CycleGAN](https://github.com/junyanz/CycleGAN) and [StyTR2](https://github.com/diyiiyiii/StyTR-2) framework to perform image-to-image translation from the COCO domain (natural photographs) to the target domain of Ukiyo-e and Monet-style paintings. During conversion, all validation images in COCO are processed to produce style-transferred counterparts, while preserving their original human annotations (bounding boxes, keypoints). This yields an OOD variant of COCO in which the underlying scene structure is unchanged, but the texture, color palette, and brushstroke patterns are consistent with oil/ukiyo-e artistic style. We also utilize Nano-banana as a style transfer tool to produce color sketch versions of COCO-OOD.
 
-Importantly, for fair comparison and to avoid introducing priors from large-scale pretrained diffusion models, we intentionally adopt the earlier CycleGAN framework rather than more recent style transfer methods. Such stylization introduces a significant appearance shift while keeping pose-related geometric information intact, making it suitable for robust pose estimation evaluation.
+Importantly, for fair comparison and to avoid introducing priors from large-scale pretrained diffusion models, we intentionally adopt the earlier StyTR2 and CycleGAN framework rather than more recent style transfer methods. Such stylization introduces a significant appearance shift while keeping pose-related geometric information intact, making it suitable for robust pose estimation evaluation.
 
 ### Download
 
