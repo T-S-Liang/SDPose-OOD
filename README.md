@@ -5,7 +5,7 @@
 # SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation
 
 [![Page](https://img.shields.io/badge/Project-Website-pink?logo=googlechrome&logoColor=white)](https://t-s-liang.github.io/SDPose)
-[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.24980)
+[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.24980v2)
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Body-blue)](https://huggingface.co/teemosliang/SDPose-Body)
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Wholebody-blue)](https://huggingface.co/teemosliang/SDPose-Wholebody)
 [![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose)
@@ -29,6 +29,7 @@ Guo Zhang<sup>1</sup>,
 ---
 
 ## 📢 News
+- **[2025-Dec-03]** 📄 Revised version of our paper released on [arXiv](https://arxiv.org/pdf/2509.24980v2).
 - **[2025-Oct-28]** 🧩 **ComfyUI node of SDPose-OOD** is now available! We sincerely thank [@judian17](https://github.com/judian17) and [@Piscesbody](https://github.com/Piscesbody) for their excellent contribution in developing this ComfyUI node, which enables downstream ComfyUI workflows and helps more people explore and apply our work. 🔗 Check it out here: [**ComfyUI-SDPose-OOD**](https://github.com/judian17/ComfyUI-SDPose-OOD)
 - **[2025-Oct-14]** 🚀 **Wholebody model** and **Huggingface Space Demo** released! You can now run SDPose demos in our Huggingface space! Check out our [🤗 SDPose Huggingface Space](https://huggingface.co/spaces/teemosliang/SDPose) and [🤗 SDPose-Wholebody Model Repository](https://huggingface.co/teemosliang/SDPose-Wholebody).
 - **[2025-Oct-13]** 🚀 **Gradio local deployment script** released! You can now run SDPose demos locally on your machine.
