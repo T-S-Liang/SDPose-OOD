@@ -29,6 +29,8 @@ Guo Zhang<sup>1</sup>,
 ---
 
 ## 📢 News
+- **[2026-Mar-20]** 📄 Revised version of our paper released on [arXiv](https://arxiv.org/pdf/2509.24980v3).
+- **[2026-Mar-20]** 🖼️ **COCO-OOD Ukiyoe, corruption subsets released!** Please refer to the dataset section of this repo.
 - **[2025-Dec-03]** 📄 Revised version of our paper released on [arXiv](https://arxiv.org/pdf/2509.24980v2).
 - **[2025-Oct-28]** 🧩 **ComfyUI node of SDPose-OOD** is now available! We sincerely thank [@judian17](https://github.com/judian17) and [@Piscesbody](https://github.com/Piscesbody) for their excellent contribution in developing this ComfyUI node, which enables downstream ComfyUI workflows and helps more people explore and apply our work. 🔗 Check it out here: [**ComfyUI-SDPose-OOD**](https://github.com/judian17/ComfyUI-SDPose-OOD)
 - **[2025-Oct-14]** 🚀 **Wholebody model** and **Huggingface Space Demo** released! You can now run SDPose demos in our Huggingface space! Check out our [🤗 SDPose Huggingface Space](https://huggingface.co/spaces/teemosliang/SDPose) and [🤗 SDPose-Wholebody Model Repository](https://huggingface.co/teemosliang/SDPose-Wholebody).
