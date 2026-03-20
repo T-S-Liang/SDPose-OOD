@@ -40,7 +40,7 @@ Guo Zhang<sup>1</sup>,
 
 ### 🚀 Coming Soon
 - [ ] We plan to release the training scripts upon the acceptance of the paper.
-- [ ] We plan to release new models soon! Stay tuned!
+- [ ] We plan to open-source SDPose-PAFPN version soon! Stay tuned!
 - [x] **HuggingFace space demo** release
 - [x] **WholeBody model** release  
 - [x] **Gradio local deployment script** release
