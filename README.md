@@ -5,7 +5,7 @@
 # SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation
 
 [![Page](https://img.shields.io/badge/Project-Website-pink?logo=googlechrome&logoColor=white)](https://t-s-liang.github.io/SDPose)
-[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.24980v2)
+[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.24980v3)
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Body-blue)](https://huggingface.co/teemosliang/SDPose-Body)
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-Wholebody-blue)](https://huggingface.co/teemosliang/SDPose-Wholebody)
 [![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Demo-yellow)](https://huggingface.co/spaces/teemosliang/SDPose)
