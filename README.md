@@ -265,9 +265,9 @@ Importantly, for fair comparison and to avoid introducing priors from large-scal
 
 📥 **[Download COCO-OOD Monet Dataset](https://drive.google.com/file/d/1T38S8gP406FGAoDmYv7eeThMWRLi3DkR/view)** from Google Drive
 
-📥 **[Download COCO-OOD Ukiyoe Dataset](https://drive.google.com/file/d/1gohg9QQVL4pmxzpObvIaSgDCjuGAA8ir/view)** from Google Drive
+📥 **[Download COCO-OOD Corruption Dataset](https://drive.google.com/file/d/1gohg9QQVL4pmxzpObvIaSgDCjuGAA8ir/view)** from Google Drive
 
-📥 **[Download COCO-OOD Corruption Dataset](https://drive.google.com/file/d/1mrss4jneFMCMKemThLGymJ5qZoHi_hTI/view)** from Google Drive
+📥 **[Download COCO-OOD Ukiyoe Dataset](https://drive.google.com/file/d/1mrss4jneFMCMKemThLGymJ5qZoHi_hTI/view)** from Google Drive
 
 ---
 
