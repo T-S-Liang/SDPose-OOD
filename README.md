@@ -29,6 +29,7 @@ Guo Zhang<sup>1</sup>,
 ---
 
 ## 📢 News
+- **[2026-Apr-22]** 🧩 SDPose is available through the official [Comfy-Org Hugging Face repository](https://huggingface.co/Comfy-Org/SDPose) for ComfyUI integration. We sincerely thank the open-source community for their efforts in supporting and maintaining the ComfyUI ecosystem. We also appreciate Comfy-Org for hosting SDPose in the official Comfy-Org model repository, which makes the model more accessible to ComfyUI users.
 - **[2026-Mar-20]** 📄 Revised version of our paper released on [arXiv](https://arxiv.org/pdf/2509.24980v3).
 - **[2026-Mar-20]** 🖼️ **COCO-OOD Ukiyoe, corruption subsets released!** Please refer to the dataset section of this repo.
 - **[2025-Dec-03]** 📄 Revised version of our paper released on [arXiv](https://arxiv.org/pdf/2509.24980v2).
