@@ -19,6 +19,7 @@ Chuanmeizhi Wang<sup>1</sup>,
 Guo Zhang<sup>1</sup>,
 [Ying-Cong Chen](https://www.yingcong.me/)<sup>3,5</sup>
 [Yuan Yuan](https://yyuanad.github.io/)<sup>2†</sup>
+
 **WACV 2027**
 **ECCV 2026 HuMoWM Workshop**
 
@@ -31,6 +32,7 @@ Guo Zhang<sup>1</sup>,
 ---
 
 ## 📢 News
+- **[2026-Oct-15]** 🎉 SDPose is accepted by WACV 2027.
 - **[2026-Sep-01]** We will present SDPose at the ECCV 2026 Workshop on Human Motion-Informed World Models and Socially Intelligent Action (HuMoWM) in Malmö, Sweden (non-archival). Come say hi if you are around!
 - **[2026-Apr-22]** 🧩 SDPose is available through the official [Comfy-Org Hugging Face repository](https://huggingface.co/Comfy-Org/SDPose) for ComfyUI integration. We sincerely thank the open-source community for their efforts in supporting and maintaining the ComfyUI ecosystem. We also appreciate Comfy-Org for hosting SDPose in the official Comfy-Org model repository, which makes the model more accessible to ComfyUI users.
 - **[2026-Mar-20]** 📄 Revised version of our paper released on [arXiv](https://arxiv.org/pdf/2509.24980v3).
