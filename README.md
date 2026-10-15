@@ -21,6 +21,7 @@ Guo Zhang<sup>1</sup>,
 [Yuan Yuan](https://yyuanad.github.io/)<sup>2†</sup>
 
 **WACV 2027**
+
 **ECCV 2026 HuMoWM Workshop**
 
 <sup>1</sup>Rama Alpaca Technology Company, <sup>2</sup>Boston College, <sup>3</sup>HKUST(GZ), <sup>4</sup>The University of Hong Kong, <sup>5</sup>HKUST
