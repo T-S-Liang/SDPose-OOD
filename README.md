@@ -26,7 +26,7 @@ Guo Zhang<sup>1,4</sup>,
 
 <sup>1</sup>Rama Alpaca Technology Company, <sup>2</sup>Boston College, <sup>3</sup>HKUST (GZ), <sup>4</sup>Research Institute of Tsinghua University in Shenzhen, <sup>5</sup>HKU, <sup>6</sup>HKUST
 
-<sup>*</sup>Corresponding author. <sup>†</sup>Equal contribution. Shuang Liang's work was done during an internship at Rama Alpaca Technology.
+<sup>*</sup>Corresponding author. <sup>†</sup>Equal contribution.
 
 </div>
 
