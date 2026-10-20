@@ -12,21 +12,21 @@
 [![ComfyUI Node](https://img.shields.io/badge/ComfyUI-SDPose--OOD-blue)](https://github.com/judian17/ComfyUI-SDPose-OOD)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-[Shuang Liang](https://t-s-liang.github.io)<sup>1,4*</sup>,
-[Jing He](https://scholar.google.com/citations?hl=en&user=RsLS11MAAAAJ)<sup>3</sup>,
+[Shuang Liang](https://t-s-liang.github.io)<sup>1,5†</sup>,
+[Jing He](https://scholar.google.com/citations?hl=en&user=RsLS11MAAAAJ)<sup>3†</sup>,
 Lejun Liao<sup>2</sup>,
 Chuanmeizhi Wang<sup>1</sup>,
-Guo Zhang<sup>1</sup>,
-[Ying-Cong Chen](https://www.yingcong.me/)<sup>3,5</sup>
-[Yuan Yuan](https://yyuanad.github.io/)<sup>2†</sup>
+Guo Zhang<sup>1,4</sup>,
+[Yingcong Chen](https://www.yingcong.me/)<sup>3,6</sup>,
+[Yuan Yuan](https://yyuanad.github.io/)<sup>2*</sup>
 
 **WACV 2027**
 
 **ECCV 2026 HuMoWM Workshop**
 
-<sup>1</sup>Rama Alpaca Technology Company, <sup>2</sup>Boston College, <sup>3</sup>HKUST(GZ), <sup>4</sup>The University of Hong Kong, <sup>5</sup>HKUST
+<sup>1</sup>Rama Alpaca Technology Company, <sup>2</sup>Boston College, <sup>3</sup>HKUST (GZ), <sup>4</sup>Research Institute of Tsinghua University in Shenzhen, <sup>5</sup>HKU, <sup>6</sup>HKUST
 
-<sup>*</sup>Work done during an internship at Rama Alpaca Technology. <sup>†</sup>Corresponding author.
+<sup>*</sup>Corresponding author. <sup>†</sup>Equal contribution. Shuang Liang's work was done during an internship at Rama Alpaca Technology.
 
 </div>
 
@@ -285,7 +285,7 @@ If you find SDPose useful in your research, please consider citing:
 ```bibtex
 @misc{liang2025sdposeexploitingdiffusionpriors,
       title={SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation}, 
-      author={Shuang Liang and Jing He and Chuanmeizhi Wang and Lejun Liao and Guo Zhang and Yingcong Chen and Yuan Yuan},
+      author={Shuang Liang and Jing He and Lejun Liao and Chuanmeizhi Wang and Guo Zhang and Yingcong Chen and Yuan Yuan},
       year={2025},
       eprint={2509.24980},
       archivePrefix={arXiv},
