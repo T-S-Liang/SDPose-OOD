@@ -46,8 +46,6 @@ Guo Zhang<sup>1,4</sup>,
 - **[2025-Sep-29]** 📄 Paper released on [arXiv](https://arxiv.org/abs/2509.24980).
 
 ### 🚀 Coming Soon
-- [ ] We plan to release the training scripts upon the acceptance of the paper.
-- [ ] We plan to release new models soon! Stay tuned!
 - [x] **HuggingFace space demo** release
 - [x] **WholeBody model** release  
 - [x] **Gradio local deployment script** release
